@@ -9,7 +9,7 @@ if __name__ == '__main__':
         for i in range(n):
             if i != max_index1 and (max_index2 == -1 or list_of_numbers[i] > list_of_numbers[max_index2]):
                 max_index2 = i
-        return n * list_of_numbers[max_index2]
+        return list_of_numbers[max_index1] * list_of_numbers[max_index2]
 
     number = int(input())
     list_of_numbers = list(map(int, input().split()))
